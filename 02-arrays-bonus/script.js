@@ -63,5 +63,23 @@ else
   console.log("isFabioPresent: ", isFabioPresent + " -> Non presente")
 }
 
+
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+console.log("5 ESERCIZIO");
+
+let teachersString = "";
+
+for (let i = 0 ; i < teachers.length ; i++) {
+
+  // Se è l'ultimo elemento non metto la virgola
+  if (i == teachers.length - 1 ) {
+    teachersString = teachersString + teachers[i];
+  }
+
+  else {
+    teachersString = teachersString + teachers[i] + " , ";
+  }
+  
+}
+
+console.log(teachersString);
